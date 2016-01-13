@@ -7,6 +7,11 @@ package Collections;
 public class BSTCreator {
     public int[] arr;
     
+    public BSTCreator(int[] arr){
+        this.arr = arr; 
+    }
+    public BSTCreator(){}
+    
     public static void main(String[] args){
         BSTCreator objBSTCreator = new BSTCreator();
         objBSTCreator.arr = new int[]{12,322,23,4,55,312,7,8,9};
