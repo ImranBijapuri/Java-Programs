@@ -3,13 +3,13 @@ package Collections;
  *
  * @author Imran Bijapuri
  */
-
+// Pass sorted array and it will create a BST else BT
 public class BSTCreator {
     public int[] arr;
     
     public static void main(String[] args){
         BSTCreator objBSTCreator = new BSTCreator();
-        objBSTCreator.arr = new int[]{1,2,3,4,5,6,7,8,9};
+        objBSTCreator.arr = new int[]{12,322,23,4,55,312,7,8,9};
         Node n = objBSTCreator.createBST(0,objBSTCreator.arr.length -1);
         Utility_Binary_Search_Tree.inOrder_Traversal(n);
         System.out.println();
