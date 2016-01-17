@@ -14,7 +14,7 @@ public class QuickSort {
         this.arr = arr;
         sort(0,arr.length-1);
         for(int i : this.arr)
-        System.out.println(i);
+            System.out.println(i);
     }
     
     public void sort(int start, int end){
