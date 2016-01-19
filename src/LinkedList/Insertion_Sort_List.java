@@ -6,13 +6,14 @@ package LinkedList;
  */
 public class Insertion_Sort_List {
     public static void main(String[] args){
-        Node head = new LinkedList().addNode(0, new int[]{1,2,3,4,5,6}, null);
-        new LinkedList().traverseList(head);
+        Node head = new LinkedList().addNode(0, new int[]{}, null);
+        //new LinkedList().traverseList(head);
         Node insertionSortList = new Insertion_Sort_List().insertionSortList(head);
         new LinkedList().traverseList(insertionSortList);
     }
     
     public Node insertionSortList(Node head) {
+        if(head == null) return head;
         Node current = head;
         Node thatNode = null;
         while(current.next != null){
