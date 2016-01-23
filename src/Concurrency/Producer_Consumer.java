@@ -12,6 +12,8 @@ public class Producer_Consumer {
     public static void main(String[] args) {
         new Producer_Consumer().init();
     }
+    
+    
 
     public void increaseCount() {
         synchronized (this) {
